@@ -2,9 +2,9 @@
 A command-line utility for batch-extracting camera trap data using [Tesseract-OCR](https://github.com/tesseract-ocr)
 
 ## Download
-The latest win32 binary can be downloaded [here](https://github.com/ahstevens/traptapper/blob/master/bin/traptapper.exe).
+The latest traptapper Win32 binary and Tesseract-OCR Win32 DLL can be downloaded [here](https://github.com/ahstevens/traptapper/releases/latest).
 
-The Tesseract-OCR v3.02 DLL is also **required**. A compiled win32 DLL can be downloaded [here](https://github.com/ahstevens/traptapper/blob/master/bin/libtesseract302.dll). It should be kept in the same directory as the traptapper executable.
+**Note**: The Tesseract-OCR v3.02 DLL is **required**, and should be kept in the same directory as the traptapper executable.
 
 ## How It Works
 traptapper attempts to cut down the amount of time spent on camera trap data entry by using open-source optical character recognition (OCR) software to automatically scan and extract the pertinent information from the camera trap pictures.
