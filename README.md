@@ -32,7 +32,7 @@ In other words, the first line of the profile is a text string used as a profile
 Parameter specifications require a name and four values that describe the parameter's bounding box in pixel space, with an optional value specifying the parameter's size.
 
 The specifications for describing the parameter(s) are:
-- `<parameter_name>`: a name for the parameter. Note that this name can contain **only** alphanumeric characters and the underscore (`_`) character. The name must have **no spaces**.
+- `<parameter_name>`: a name for the parameter. Note that this name can contain **only** alphanumeric characters and the underscore (`_`) character. The name must have **no spaces or commas**.
   - if a parameter name is specified as `date`, `time`, `temperature`, or `temp`, extra data scrubbing functions will be applied to the output value in an attempt to produce cleaner output.
 - `<left>`: the pixel coordinate of the left edge of the bounding box (i.e., the x-coordinate of the bounding box's top-left corner)
 - `<top>`: the pixel coordinate of the top edge of the bounding box (i.e., the y-coordinate of the bounding box's top-left corner)
@@ -62,8 +62,9 @@ traptapper outputs its results in comma-separated value (CSV) format, with one r
 
 For example, the output using a camera profile named "Bushnell Model X" which specifies `temperature`, `date`, and `time` parameters (in that order) along with the image list in the above example would be formatted as follows:
 
-| filepath | cameraType | temperature | date | time |
-|----------|------------|-------------|------|------|
-| C:\Users\MyUsername\Pictures\CameraTrap\IMG0001.jpg | Bushnell Model X | 22.1 | 11/15/2015 | 14:32:50 |
-| C:\Users\MyUsername\Pictures\CameraTrap\IMG0002.jpg | Bushnell Model X | 21.4 | 11/15/2015 | 14:35:32 |
-| C:\Users\MyUsername\Pictures\CameraTrap\IMG0003.jpg | Bushnell Model X | 23.2 | 11/15/2015 | 14:36:54 |
+```
+filepath,cameraType,temperature,date,time
+C:\Users\MyUsername\Pictures\CameraTrap\IMG0001.jpg,Bushnell Model X,22.1,11/15/2015,14:32:50
+C:\Users\MyUsername\Pictures\CameraTrap\IMG0002.jpg,Bushnell Model X,21.4,11/15/2015,14:35:32
+C:\Users\MyUsername\Pictures\CameraTrap\IMG0003.jpg,Bushnell Model X,23.2,11/15/2015,14:36:54
+```
