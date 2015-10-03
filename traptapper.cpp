@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////
-// TRAPTAPPER v.1
+// TRAPTAPPER v0.1.0
 // by Drew Stevens (ahstevens@gmail.com)
 // 
 // Licensed under the Apache License, Version 2.0 (the "License");
